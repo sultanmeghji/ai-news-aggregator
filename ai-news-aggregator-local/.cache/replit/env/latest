@@ -1,0 +1,51 @@
+declare -gx __EGL_VENDOR_LIBRARY_FILENAMES=/nix/store/1z62rda9iqnxi4ryvgmyvfaj979hgk7s-mesa-24.2.8-drivers/share/glvnd/egl_vendor.d/50_mesa.json
+declare -gx REPL_HOME=/home/runner/workspace
+declare -gx REPL_LANGUAGE=nix
+declare -gx PROMPT_DIRTRIM=2
+declare -gx NIX_PATH=nixpkgs=/home/runner/.nix-defexpr/channels/nixpkgs-stable-24_05:/home/runner/.nix-defexpr/channels
+declare -gx LIBGL_DRIVERS_PATH=/nix/store/1z62rda9iqnxi4ryvgmyvfaj979hgk7s-mesa-24.2.8-drivers/lib/dri
+declare -gx REPLIT_CLUSTER=janeway
+declare -gx XDG_CONFIG_HOME=/home/runner/workspace/.config
+declare -gx XDG_DATA_HOME=/home/runner/workspace/.local/share
+declare -gx REPLIT_RTLD_LOADER=1
+declare -gx DISPLAY=:0
+declare -gx REPL_OWNER=s0144
+declare -gx REPLIT_ENVIRONMENT=production
+declare -gx REPLIT_DOMAINS=b5f7f32e-19b4-4b24-8c64-8bd1b394cebf-00-39ys6obnxbqvr.janeway.replit.dev
+declare -gx GIT_EDITOR=replit-git-editor
+declare -gx REPLIT_CLI=/nix/store/xab029d0bk9yqri2yl3pdxg37byzijjq-pid1-0.0.1/bin/replit
+declare -gx LANG=en_US.UTF-8
+declare -gx REPL_OWNER_ID=44106768
+declare -gx REPLIT_LD_AUDIT=/nix/store/1blcr36jzjnqs8xcnckviaqh1gky3mhw-replit_rtld_loader-1/rtld_loader.so
+declare -gx XDG_DATA_DIRS=/nix/store/2hwml8w7zdv6bg6h04325w25c6da79ps-replit-runtime-path/share
+declare -gx NIXPKGS_ALLOW_UNFREE=1
+declare -gx REPL_ID=b5f7f32e-19b4-4b24-8c64-8bd1b394cebf
+declare -gx REPL_IMAGE=gcr.io/marine-cycle-160323/nix:bf8590a3e2f0a8b70b7ca175eeed9074dffbfca9
+declare -gx DOCKER_CONFIG=/home/runner/workspace/.config/docker
+declare -gx LD_AUDIT=/nix/store/1blcr36jzjnqs8xcnckviaqh1gky3mhw-replit_rtld_loader-1/rtld_loader.so
+declare -gx npm_config_prefix=/home/runner/workspace/.config/npm/node_global
+declare -gx COLORTERM=truecolor
+read -r _new_path <<< "/nix/store/s62s2lf3bdqd0iiprrf3xcks35vkyhpb-npx/bin:/home/runner/workspace/.config/npm/node_global/bin:/home/runner/workspace/node_modules/.bin:/nix/store/lyx73qs96hfazl77arnwllwckq9dy012-nodejs-20.18.1-wrapped/bin:/nix/store/917mlm9pvmkd4c62rvvhp2xyd2c9hyl5-bun-1.2.16/bin:/nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin:/nix/store/jcgdksj946l5l42c2y9ks2l4g6n74h3f-yarn-1.22.22/bin:/nix/store/2s17mrby0ph00z22rkabfs9vzpzx1r70-prettier-3.3.3/bin:/nix/store/0z5iwcvalafm3j2c5pfhllsfbxrbyzf4-postgresql-16.5/bin:/nix/store/gw425s7w7a3vxjl53ilcpcgixx4dzrnn-pid1/bin:/nix/store/2hwml8w7zdv6bg6h04325w25c6da79ps-replit-runtime-path/bin:/home/runner/.nix-profile/bin:/home/runner/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+#PATH=/nix/store/s62s2lf3bdqd0iiprrf3xcks35vkyhpb-npx/bin:/home/runner/workspace/.config/npm/node_global/bin:/home/runner/workspace/node_modules/.bin:/nix/store/lyx73qs96hfazl77arnwllwckq9dy012-nodejs-20.18.1-wrapped/bin:/nix/store/917mlm9pvmkd4c62rvvhp2xyd2c9hyl5-bun-1.2.16/bin:/nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin:/nix/store/jcgdksj946l5l42c2y9ks2l4g6n74h3f-yarn-1.22.22/bin:/nix/store/2s17mrby0ph00z22rkabfs9vzpzx1r70-prettier-3.3.3/bin:/nix/store/0z5iwcvalafm3j2c5pfhllsfbxrbyzf4-postgresql-16.5/bin:/nix/store/gw425s7w7a3vxjl53ilcpcgixx4dzrnn-pid1/bin:/nix/store/2hwml8w7zdv6bg6h04325w25c6da79ps-replit-runtime-path/bin:/home/runner/.nix-profile/bin:/home/runner/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+if [ -e "/run/replit/env/last" ]; then read -r _last_path < <(\grep '^#PATH=' /run/replit/env/last | cut -f 2 -d =); fi
+_user_components="$(\tr : $'\n' <<< "${PATH:-}" |\grep -xv -f <(\tr : $'\n' <<< "${_last_path}") |\tr $'\n' :)"
+declare -gx PATH="${_user_components}${_new_path}"
+declare -gx HOSTNAME=ec163d898f9a
+declare -gx REPLIT_SUBCLUSTER=paid
+declare -gx REPLIT_CONTAINER=gcr.io/marine-cycle-160323/repl-base:97433c06ca04972a1619dedd971cb3a93f4a5087
+declare -gx REPLIT_BASHRC=/nix/store/5m19p9rqshi95sxcjiq121b6saz8ra31-replit-bashrc/bashrc
+declare -gx LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
+declare -gx REPL_SLUG=workspace
+declare -gx GLIBC_TUNABLES=glibc.rtld.optional_static_tls=2500
+declare -gx NIX_PROFILES='/nix/var/nix/profiles/default /home/runner/.nix-profile'
+declare -gx USER=runner
+declare -gx REPLIT_PID1_VERSION=0.0.0-5aad638
+declare -gx REPLIT_NIX_CHANNEL=stable-24_05
+declare -gx REPLIT_PID1_FLAG_PREEVALED_SYSPKGS=1
+declare -gx NIX_PS1='\[\033[01;34m\]\w\[\033[00m\]\$ '
+declare -gx HOME=/home/runner
+declare -gx REPLIT_RIPPKGS_INDICES=/nix/store/l5gcmdp908sji4wchfp8csflhjcgnmm3-rippkgs-indices
+declare -gx REPL_PUBKEYS='{"crosis-ci":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","crosis-ci:1":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","crosis-ci:latest":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","prod":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","prod:1":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","prod:2":"8uGN+vfszlnV93/HCSHlVLG0xddMlPkir1Ni4JKT4+w=","prod:3":"9+MCOSHQSQlcodXoot8dC8NLhc862nLkx1/VMsbY2h8=","prod:4":"8uGN+vfszlnV93/HCSHlVLG0xddMlPkir1Ni4JKT4+w=","prod:5":"9+MCOSHQSQlcodXoot8dC8NLhc862nLkx1/VMsbY2h8=","prod:latest":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","vault-goval-token":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E=","vault-goval-token:1":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E=","vault-goval-token:latest":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E="}'
+declare -gx REPLIT_DEV_DOMAIN=b5f7f32e-19b4-4b24-8c64-8bd1b394cebf-00-39ys6obnxbqvr.janeway.replit.dev
+declare -gx XDG_CACHE_HOME=/home/runner/workspace/.cache
+declare -gx GIT_ASKPASS=replit-git-askpass
